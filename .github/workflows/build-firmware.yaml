@@ -1,0 +1,15 @@
+name: Create Board Firmware
+
+on:
+  schedule:
+    - cron: '10 17 * * *' # build fresh every 5:10 PM
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  call-workflow-passing-data:
+    uses: gerefi/gerefi/.github/workflows/custom-board-build.yaml@master
+    secrets: inherit
+    permissions:
+      contents: write
