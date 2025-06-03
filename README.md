@@ -1,1 +1,1 @@
-# fw-custom-example
+See https://github.com/gerefi/gerefi/wiki/Custom-Firmware
